@@ -1,0 +1,12 @@
+<!-- https://github.com/jekyll/jekyll-redirect-from/blob/master/lib/jekyll-redirect-from/redirect.html -->
+<!doctype html>
+<html>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ page.redirect.to }}">
+  <script>location="{{ page.redirect.to }}"</script>
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+  <meta name="robots" content="noindex">
+  <h1>Redirecting to new {{ page.title }} page&hellip;</h1>
+  <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+</html>
